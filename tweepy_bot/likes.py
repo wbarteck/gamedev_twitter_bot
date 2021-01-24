@@ -27,9 +27,9 @@ search_words = "#madewithunity #gamedev" + " -filter:retweets"
 date_since = "2021-01-01"
 # Collect tweets
 tweets = limit_handled(tw.Cursor(api.search,
-              q=search_words,
-              lang="en",
-              since=date_since).items())
+            q=search_words,
+            lang="en",
+            since=date_since).items())
 # tweets = tw.Cursor(api.search,
 #               q=search_words,
 #               lang="en",
